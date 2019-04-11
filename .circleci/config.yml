@@ -139,6 +139,7 @@ workflows:
             branches:
               only:
               - develop
+              - master
       - deploy_to_stag:
           requires:
             - build_and_test
@@ -146,4 +147,5 @@ workflows:
             branches:
               only:
                 - staging
+                - master
 
